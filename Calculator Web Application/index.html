@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modern Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="calculator-header">
+    <h1>🧮 Modern Calculator</h1>
+    <p>
+      Welcome! This calculator lets you perform quick and accurate arithmetic operations right in your browser.<br>
+      Designed for clarity and ease of use, it works seamlessly on any device. Try out the features below!
+    </p>
+    <button id="theme-toggle">Toggle Theme</button>
+  </header>
+  <main>
+    <div class="calculator">
+      <input type="text" id="display" disabled aria-label="Calculator display">
+      <div class="memory-buttons">
+        <button class="btn memory-btn" id="mc" title="Memory Clear">MC</button>
+        <button class="btn memory-btn" id="mr" title="Memory Recall">MR</button>
+        <button class="btn memory-btn" id="mplus" title="Memory Add">M+</button>
+        <button class="btn memory-btn" id="mminus" title="Memory Subtract">M-</button>
+      </div>
+      <div class="buttons">
+        <button class="btn" data-value="(">(</button>
+        <button class="btn" data-value=")">)</button>
+        <button class="btn operator" data-value="%">%</button>
+        <button class="btn operator" id="clear">C</button>
+
+        <button class="btn" data-value="7">7</button>
+        <button class="btn" data-value="8">8</button>
+        <button class="btn" data-value="9">9</button>
+        <button class="btn operator" data-value="/">÷</button>
+
+        <button class="btn" data-value="4">4</button>
+        <button class="btn" data-value="5">5</button>
+        <button class="btn" data-value="6">6</button>
+        <button class="btn operator" data-value="*">×</button>
+
+        <button class="btn" data-value="1">1</button>
+        <button class="btn" data-value="2">2</button>
+        <button class="btn" data-value="3">3</button>
+        <button class="btn operator" data-value="-">−</button>
+
+        <button class="btn" data-value="0">0</button>
+        <button class="btn" data-value=".">.</button>
+        <button class="btn operator" data-value="√">√</button>
+        <button class="btn operator" data-value="+">+</button>
+
+        <button class="btn equals-btn" id="equals" colspan="4">=</button>
+      </div>
+      <aside class="history-container">
+        <h3>History</h3>
+        <ul id="history"></ul>
+      </aside>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
